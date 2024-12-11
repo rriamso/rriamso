@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--Author @ M Soyombo-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact page.html">Contact</a></li>
+                <li><a href="generator.html">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gallery</h1>
+        <body>
+
+            <div class="grid-container">
+              <div class="grid-item">
+                <img src="zero hunger 1 (2).png" alt="Image 1">
+              </div>
+              <div class="grid-item">
+                <img src="Zero Hunger 2.jpeg" alt="Image 2">
+              </div>
+              <div class="grid-item">
+                <img src="Zero Hunger 3.jpg" alt="Image 3">
+              </div>
+              <div class="grid-item">
+                <img src="zero hunger 4.jpg" alt="Image 4">
+              </div>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Harvest Hope
+            
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #faf3dd;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .grid-item {
+      border: 2px solid #a09a47;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .grid-item:hover {
+      transform: scale(1.05);
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    header {
+      background-color: #f9c74f;;
+      color: white;
+      padding: 10px 0;
+      height: auto;
+}
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #f9c74f;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+}
+  </style>
+</html>

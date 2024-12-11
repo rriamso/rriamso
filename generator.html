@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Hunger Actions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+      background-color: #faf3dd;
+    }
+    h1 {
+      color: #8d6748;
+    }
+    #zero-hunger-action {
+      font-size: 1.2em;
+      margin: 20px 0;
+      color: #555;
+    }
+    button {
+      background-color: #8d6748;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #493525;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Zero Hunger Action Generator</h1>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="solutions.html">Solutions</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact page.html">Contact</a></li>
+              <li><a href="generator.html">Tips</a></li>
+          </ul>
+      </nav>
+  </header>
+    <p id="zero-hunger-action">Click the button to get your action!</p>
+    <button id="generate-zero-hunger-action">Generate Action</button>
+    <script>
+
+// List of actions to support zero hunger
+// This array contains various suggestions and actions individuals can take to help eliminate hunger.
+const zeroHungerActions = [
+  "Donate to local food banks to support those in need.",
+  "Volunteer at a soup kitchen or food distribution center.",
+  "Reduce food waste by planning meals and using leftovers creatively.",
+  "Support local farmers by purchasing from farmers' markets.",
+  "Advocate for policies that address hunger and poverty in your community.",
+  "Educate others about the global impact of hunger.",
+  "Start a community garden to grow and share fresh produce.",
+  "Compost food scraps to enrich soil and reduce landfill waste.",
+  "Choose sustainably sourced foods to promote environmental balance.",
+  "Participate in campaigns to raise awareness about hunger and nutrition."
+];
+
+// Function to get a random zero hunger action
+// This function selects a random action from the zeroHungerActions array
+function getRandomZeroHungerAction() {
+  // Generate a random index based on the length of the array
+  const randomIndex = Math.floor(Math.random() * zeroHungerActions.length);
+  // Return the action at the random index
+  return zeroHungerActions[randomIndex];
+}
+
+// Display the random action in the console or on a webpage
+// This function fetches a random action and updates the user interface or console
+function displayZeroHungerAction() {
+  // Fetch a random action
+  const action = getRandomZeroHungerAction();
+  //With this i got help from "https://stackoverflow.com/questions/33160766/generate-random-sentences-from-an-array-javascript" and W3schools
+  // Log the action to the console for debugging or non-UI environments
+  console.log("Today's Zero Hunger action: " + action);
+
+  // Check if there is a DOM element with the id 'zero-hunger-action'
+  // If found, update its text content with the random action
+  const actionElement = document.getElementById("zero-hunger-action");
+  if (actionElement) {
+    actionElement.textContent = action;
+  }
+}
+
+// Add event listeners when the DOM is fully loaded
+// Ensures the script interacts with elements after they are rendered
+document.addEventListener("DOMContentLoaded", () => {
+  // Look for a button with the id 'generate-zero-hunger-action'
+  const button = document.getElementById("generate-zero-hunger-action");
+  // If the button exists, attach a click event listener to it
+  if (button) {
+    button.addEventListener("click", displayZeroHungerAction);
+  }
+
+  // Optionally display a random action immediately when the page loads
+  displayZeroHungerAction();
+});
+</script>
+<footer>
+  <!-- this shows that anything here will be on the bottom of the website and will be placed in a fixed/float like manner-->
+  <p>&copy; 2024 Harvest Hope</p>
+  <!--my tag across all the page-->
+</footer>
+<script src="script.js"></script>
+  </body>
+  </html>

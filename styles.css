@@ -1,0 +1,127 @@
+/*Author @ M Soyombo & A Olattilewa
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #faf3dd;
+  color: #8d6748;
+}
+
+/* p1 {
+  color: #030466;
+  align-content: center;
+} */ 
+
+header {
+  background-color: #f9c74f;;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f9c74f; /*#89019b;*/
+  color: white;
+  /* position: fixed;  */
+  width: 100%;
+  bottom: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e76f51;
+  border-radius: 5px; 
+
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.overview {
+  background-color: white ;
+  padding: 25px;
+  border: solid #e76f51;
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+}
+
+
+.solution {
+  background-color: white;
+  border: solid #e76f51;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+ 
+}
+
+.solution h3 {
+    color: #8d6748;
+}
+
+.solution p { 
+    color: black;
+}
